@@ -1,10 +1,11 @@
 html{
-  display:grid;
+  display:flex;
   vertical-align: middle;
   background-color:#1a1a1a;
   justify-content:center;
 
 }
 #chest{
-  padding
+  width: 100%;
+  padding:4%
 }
