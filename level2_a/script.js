@@ -1,3 +1,1 @@
-$( document.body ).click(function() {
-    alert('Hi I am bound to the body!');
-});
+document.body.onclick = function() { alert('Hi I am bound to the body!');}
