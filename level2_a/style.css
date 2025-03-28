@@ -50,6 +50,7 @@ html{
   padding:5%;
 }
 #display{
+  padding:1em;
   background-color:blue;
 }
 /* ill change this later */
