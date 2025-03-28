@@ -1,1 +1,8 @@
-document.body.onclick = function() { alert('Hi I am bound to the body!');}
+var clicked = false;
+document.body.onclick = function() { 
+  
+  if(!clicked){
+    clicked = !clicked;
+  }
+  alert(clicked)
+  ;}
