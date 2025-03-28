@@ -16,8 +16,9 @@ html{
 #chest{
   z-index:0;
   position: absolute;
-  width: 50em;
-  height:50em;
+  width: 55em;
+  height:55em;
+  right:25%;
 }
 #text{
   position:relative;
@@ -25,8 +26,8 @@ html{
   z-index:1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
   width:80em;
-  height:30em;
-  top:50%;
+  height:35em;
+  top:45%;
   right:35%;
   background-size: cover;
   background-position: center;
