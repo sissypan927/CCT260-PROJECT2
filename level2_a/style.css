@@ -1,12 +1,11 @@
 html{
-  display:flex;
-  vertical-align: middle;
   background-color:#1a1a1a;
   padding-left:20em;
-
+  display:flex;
 }
 .container{
   align-content:center;
+  vertical-align: middle;
 }
 #chest{
   z-index:0;
@@ -14,16 +13,16 @@ html{
   width: 50em;
 }
 #text{
+  position:relative;
   color:white;
   z-index:1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
   width: 70em;
   height:30em;
-  position:relative;
+  right:25%;
   background-size: cover;
   background-position: center;
   text-align:center;
-  
 
 }
 #text p{
