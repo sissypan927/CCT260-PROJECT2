@@ -6,7 +6,15 @@ html{
 
 }
 #chest{
-  width: 100%;
-  padding:4%
+  z-index:0;
+  position: relative;
+  width: 50em;
+}
+#text{
+  color:white;
+  z-index:1;
+  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
+  width: 50em;
+  position: absolute;
 }
 /* ill change this later */
