@@ -8,14 +8,14 @@ html{
 }
 .container{
   width:60em;
-  height: 20em;
+  height: 39em;
   
 }
 #chest{
   z-index:0;
   position: absolute;
-  width: 55em;
-  height:55em;
+  width: 45em;
+  height:45em;
   right:25%;
 }
 #text-frame{
@@ -25,7 +25,7 @@ html{
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
   width:80em;
   height:35em;
-  top:45%;
+  top:10%;
   right:35%;
   background-size: cover;
   background-position: center;
@@ -45,7 +45,7 @@ html{
 }
 #div1{
   width: 55em;
-  height:55em;
+  height:20em;
   background-color:white; 
 }
 /* ill change this later */
