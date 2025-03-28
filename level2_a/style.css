@@ -5,6 +5,9 @@ html{
   padding-left:20em;
 
 }
+.container{
+  align-content:center;
+}
 #chest{
   z-index:0;
   position: absolute;
@@ -14,18 +17,18 @@ html{
   color:white;
   z-index:1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
-  height:100%;
-  width: 80em;
-  position: absolute;
+  width: 70em;
+  height:20em;
+  position:relative;
   background-size: cover;
   background-position: center;
+  text-align:center;
   
 
 }
 #text p{
   font-size: 15px;
   position:relative;
-  left:25%;
   top:47%;
 }
 /* ill change this later */
