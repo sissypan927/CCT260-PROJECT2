@@ -14,7 +14,17 @@ html{
   color:white;
   z-index:1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
+  height:100%;
   width: 50em;
   position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+/*   text-align:center; */
+}
+#text p{
+  position:relative;
+  left:50%;
+  top:50%;
 }
 /* ill change this later */
