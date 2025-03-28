@@ -46,6 +46,10 @@ html{
 #div1{
   width: 55em;
   height:20em;
-  background-color:white; 
+  background-color:white;
+  padding:5%;
+}
+#display{
+  background-color:blue;
 }
 /* ill change this later */
