@@ -4,6 +4,8 @@ html{
   display:flex;
 }
 .container{
+  width:60em;
+  height: 20em;
   align-content:center;
   vertical-align: middle;
 }
@@ -11,23 +13,25 @@ html{
   z-index:0;
   position: absolute;
   width: 50em;
+  height:50em;
 }
 #text{
   position:relative;
   color:white;
   z-index:1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
-  width: 70em;
+  width:74em;
   height:30em;
-  right:25%;
+  top:30%;
+  right:20%;
   background-size: cover;
   background-position: center;
   text-align:center;
 
 }
 #text p{
-  font-size: 15px;
+  font-size: 35px;
   position:relative;
-  top:47%;
+  top:45%;
 }
 /* ill change this later */
