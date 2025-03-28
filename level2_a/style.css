@@ -1,16 +1,12 @@
 html{
   background-color:#1a1a1a;
-  padding-left:20em;
   display:flex;
   vertical-align: middle;
-  margin:auto;
-  align-content:center;
   justify-content: center;
   font-family: Arial, sans-serif;
   color:white;
 }
 .container{
-  
   width:60em;
   height: 20em;
   
@@ -23,6 +19,7 @@ html{
   right:25%;
 }
 #text-frame{
+  padding-left:20em;
   position:relative;
   z-index:1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
@@ -30,7 +27,7 @@ html{
   height:35em;
   top:45%;
   right:35%;
-  background-size: cover;
+  background-size: fill;
   background-position: center;
   text-align:center;
 
