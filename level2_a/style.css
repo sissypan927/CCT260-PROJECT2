@@ -19,7 +19,7 @@ html{
   right:25%;
 }
 #text-frame{
-  padding-left:20em;
+  margin-left:10em;
   position:relative;
   z-index:1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
@@ -27,7 +27,7 @@ html{
   height:35em;
   top:45%;
   right:35%;
-  background-size: fill;
+  background-size: cover;
   background-position: center;
   text-align:center;
 
