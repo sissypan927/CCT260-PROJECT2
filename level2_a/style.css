@@ -2,12 +2,12 @@ html{
   display:flex;
   vertical-align: middle;
   background-color:#1a1a1a;
-  justify-content:center;
+  padding-left:20em;
 
 }
 #chest{
   z-index:0;
-  position: relative;
+  position: absolute;
   width: 50em;
 }
 #text{
@@ -15,16 +15,17 @@ html{
   z-index:1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
   height:100%;
-  width: 50em;
+  width: 80em;
   position: absolute;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-/*   text-align:center; */
+  
+
 }
 #text p{
+  font-size: 15px;
   position:relative;
-  left:50%;
-  top:50%;
+  left:25%;
+  top:47%;
 }
 /* ill change this later */
