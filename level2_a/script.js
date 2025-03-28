@@ -11,7 +11,7 @@ function display_riddle(){
   var node = document.createElement("div");
   node.setAttribute("id", "div1");
   node.setAttribute("class", "container");
-  node.innerHTML = "<p>LOCK</p>";
+  node.innerHTML = "<div></div>";
   document.body.append(node);
   
   alert(document.body.innerHTML);
