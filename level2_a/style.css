@@ -2,12 +2,16 @@ html{
   background-color:#1a1a1a;
   padding-left:20em;
   display:flex;
+  vertical-align: middle;
+  margin:auto;
 }
 .container{
+  
   width:60em;
   height: 20em;
   align-content:center;
-  vertical-align: middle;
+  justify-content: center;
+  
 }
 #chest{
   z-index:0;
@@ -22,8 +26,8 @@ html{
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
   width:74em;
   height:30em;
-  top:30%;
-  right:20%;
+  top:50%;
+  right:25%;
   background-size: cover;
   background-position: center;
   text-align:center;
