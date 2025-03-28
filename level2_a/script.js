@@ -3,14 +3,12 @@ document.body.onclick = function() {
   
   if(!clicked){
     clicked = !clicked;
+    display_riddle();
   }
-  alert(clicked);
-  display_riddle();
   ;}
 function display_riddle(){
   document.body.innerHTML = '';
   var node = document.createElement("div");
-  node.setAttribute("id", "div1");  
-  var temp =  document.createTextNode("Water");
-  
+  node.innerHTML = "<p>hi</p>";
+  alert(clicked);
 }
