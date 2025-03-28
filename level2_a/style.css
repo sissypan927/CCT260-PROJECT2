@@ -4,13 +4,13 @@ html{
   display:flex;
   vertical-align: middle;
   margin:auto;
+  align-content:center;
+  justify-content: center;
 }
 .container{
   
   width:60em;
   height: 20em;
-  align-content:center;
-  justify-content: center;
   
 }
 #chest{
@@ -24,10 +24,10 @@ html{
   color:white;
   z-index:1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
-  width:74em;
+  width:80em;
   height:30em;
   top:50%;
-  right:25%;
+  right:35%;
   background-size: cover;
   background-position: center;
   text-align:center;
