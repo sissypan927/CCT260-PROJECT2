@@ -1,56 +1,54 @@
-html{
-  background-color:#1a1a1a;
-  display:flex;
+html {
+  background-color: #1a1a1a;
+  display: flex;
   vertical-align: middle;
   justify-content: center;
   font-family: Arial, sans-serif;
-  color:white;
+  color: white;
 }
-.container{
-  width:60em;
+.container {
+  width: 60em;
   height: 39em;
-  
 }
-#chest{
-  z-index:0;
+#chest {
+  z-index: 0;
   position: absolute;
   width: 45em;
-  height:45em;
-  right:25%;
+  height: 45em;
+  right: 25%;
 }
-#text-frame{
-  margin-left:10em;
-  position:relative;
-  z-index:1;
+#text-frame {
+  margin-left: 10em;
+  position: relative;
+  z-index: 1;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/text-frame.png?v=1743044873693);
-  width:80em;
-  height:35em;
-  top:10%;
-  right:35%;
+  width: 80em;
+  height: 35em;
+  top: 10%;
+  right: 35%;
   background-size: cover;
   background-position: center;
-  text-align:center;
-
+  text-align: center;
 }
-#text{
+#text {
   font-size: 35px;
-  position:relative;
-  top:45%;
+  position: relative;
+  top: 45%;
 }
-#continue{
-  position:relative;
-  top:45%;
+#continue {
+  position: relative;
+  top: 45%;
   font-size: 20px;
   font-style: italic;
 }
-#div1{
+#div1 {
   width: 55em;
-  height:20em;
-  background-color:white;
-  padding:5%;
+  height: 20em;
+  background-color: white;
+  padding: 5%;
 }
-#display{
-  padding:1em;
-  background-color:blue;
+#display {
+  padding: 1em;
+  background-color: blue;
 }
 /* ill change this later */
