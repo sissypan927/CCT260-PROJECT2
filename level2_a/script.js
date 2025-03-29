@@ -22,7 +22,7 @@ function display_riddle(){
   node.append(temp);
   temp = document.createElement("button");
   temp.textContent = "DEL";
-  node.appened(temp);
+  node.append(temp);
   document.body.append(node);
   alert(document.body.innerHTML);
 }
