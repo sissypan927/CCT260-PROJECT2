@@ -41,3 +41,12 @@ button:hover {
 .puzzle-slot:hover{
   background-color: #1a1a1a;
 }
+.puzzle-slot:focus{
+  background-color: #ff4444;
+  color: #ff4444;
+}
+.puzzle-piece{
+  width:106px;
+  height:135px;
+  color:rgba(0, 0, 0, 0);
+}
