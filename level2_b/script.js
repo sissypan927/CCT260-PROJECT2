@@ -1,4 +1,5 @@
 var clicked = false;
+var slot1 = false;
 document.body.onclick = function () {
   if (!clicked) {
     clicked = !clicked;
@@ -28,13 +29,18 @@ function load_puzzle() {
   var row = document.createElement("div");
   for(var i = 1; i < 5; i++){
     temp_button = document.createElement("button");
-    temp_button.setAttribute("class", "puzzle-slot")
+    temp_button.setAttribute("class", "puzzle-slot");
+    temp_button.setAttribute("id", "puzzle-slot" + i);
     temp_button.textContent = i;
     puzzle_board.append(temp_button);
+    
     if(i == 2){
       puzzle_board.append(row);
       row = document.createElement("div");
     }
   }
   document.body.append(puzzle_board);
+}
+function check_puzzle(){
+  
 }

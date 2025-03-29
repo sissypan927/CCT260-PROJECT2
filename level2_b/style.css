@@ -36,6 +36,7 @@ button:hover {
   margin:0;
   width:106px;
   height:135px;
+  border-color:#ff4444;
 }
 .puzzle-slot:hover{
   background-color: #1a1a1a;
