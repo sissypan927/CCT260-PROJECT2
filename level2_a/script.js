@@ -8,8 +8,7 @@ document.body.onclick = function() {
   }
   ;}
 function display_riddle(){
-  var container = document.createElement("div");
-  
+  // var container = document.createElement("div");
   var node = document.createElement("div");
   node.setAttribute("id", "keypad");
   node.setAttribute("class", "container");
