@@ -6,6 +6,10 @@ html {
   font-family: Arial, sans-serif;
   color: white;
 }
+button{
+  font-size:20px;
+  text-align:center;
+}
 .container {
   width: 60em;
   height: 39em;
@@ -15,7 +19,7 @@ html {
   position: absolute;
   width: 45em;
   height: 45em;
-  right: 25%;
+  right: 30%;
 }
 #text-frame {
   margin-left: 10em;
