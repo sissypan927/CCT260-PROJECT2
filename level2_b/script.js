@@ -61,10 +61,10 @@ function load_puzzle() {
   
   }
   var children = pieces.children;
-  var new_list = [children[1], children[2], children[0], children[3]];
+  var new_list = [children[1], children[3], children[2], children[0]];
   pieces.innerHTML = "";
   for(let i = 0; i <4; i++){
-    pieces
+    pieces.append(new_list[i])
   }
   
   document.body.append(pieces);
@@ -78,6 +78,11 @@ function check_puzzle(s, p){
   }
   if(slot != 0 && piece != 0){
     if(slot == piece){
+      var dest_slot = document.getElementById("puzzle-slot"+slot);
+      var new_img = document.getElementById("puzzle-piece"+piece).style.backgroundImage;
+      alert(new_img);
+      dest_slot.style.backgroundImage = new_img;
+      
       document.getElementById("puzzle-piece"+piece).remove();
       document.getElementById("puzzle-slot"+slot).blur();
       slot = 0;
