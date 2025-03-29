@@ -1,4 +1,5 @@
 var clicked = false;
+var puzzle_start = false;
 document.body.onclick = function() { 
   
   if(!clicked){
@@ -34,11 +35,13 @@ function display_riddle(){
   //append clear button
   var temp = document.createElement("button");
   temp.textContent = "CLEAR";
+  temp.addEventListener("click", clear_ans);
   row.append(temp);
   temp = document.createElement("button");
   //append 0 button
   temp.textContent = 0;
   row.append(temp);
+  temp.addEventListener("click", () => hello(0));
   //append ENTER button
   temp = document.createElement("button");
   temp.textContent = "ENTER";
@@ -49,6 +52,9 @@ function display_riddle(){
   document.body.append(node);
   alert(document.body.innerHTML);
 }
+function clear_ans(){
+  document.getElementByID("display").innerHTML = "<p></p>";
+}
 function hello(number){
-  alert(number);
+  var curr = document.getElementByID("display").innerHTML;
 }
