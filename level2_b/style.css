@@ -58,5 +58,17 @@ button:hover {
 }
 #puzzle-piece1{
   background-size: 100%;
+  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/top-left.png?v=1743279556070)
+}
+#puzzle-piece2{
+  background-size: 100%;
+  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/top-right.png?v=1743279545242)
+}
+#puzzle-piece3{
+  background-size: 100%;
+  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/bottom-left.png?v=1743279656125)
+}
+#puzzle-piece4{
+  background-size: 100%;
   background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/bottom-right.png?v=1743279521493)
 }

@@ -60,6 +60,13 @@ function load_puzzle() {
     pieces.append(temp_button);
   
   }
+  var children = pieces.children;
+  var new_list = [children[1], children[2], children[0], children[3]];
+  pieces.innerHTML = "";
+  for(let i = 0; i <4; i++){
+    pieces
+  }
+  
   document.body.append(pieces);
 }
 function check_puzzle(s, p){
