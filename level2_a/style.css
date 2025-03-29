@@ -66,9 +66,9 @@ button:hover{
 #content{
   display:inline-block;
   margin:0;
-  padding:0;
+  padding:10px;
   border:0;
-  width100%;
+  gap: 10px;
 }
 #keypad {
   display: flex;
@@ -78,6 +78,7 @@ button:hover{
   height: 50em;
   align-content: center;
   border-style:none;
+  padding:5em;
 
 }
 #display {

@@ -95,8 +95,12 @@ function submit_ans(){
   var curr = document.getElementById("display").textContent;
   if(curr == "45277"){
     alert("yay");
+    document.body.innerHTML = "";
+    
+    //connect to level 3
   }
   else{
     alert("ohno..");
+    //Connect to ending 2
   }
 }
