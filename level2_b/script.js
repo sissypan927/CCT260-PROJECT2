@@ -71,11 +71,14 @@ function check_puzzle(s, p){
   }
   if(slot != 0 && piece != 0){
     if(slot == piece){
-      alert("yay")
       document.getElementById("puzzle-piece"+piece).remove();
       document.getElementById("puzzle-slot"+slot).blur();
+      slot = 0;
+      piece = 0;
     }
     else{
+      document.getElementById("puzzle-piece"+piece).blur();
+      document.getElementById("puzzle-slot"+slot).blur();
       slot = 0;
       piece = 0;
     }

@@ -48,8 +48,15 @@ button:hover {
 .puzzle-piece{
   width:106px;
   height:135px;
+  border-style: none;
+  border-radius: 0px;
   color:rgba(0, 0, 0, 0);
 }
+.puzzle-piece:focus{
+  border-style: solid;
+  border-color: #ff4444;
+}
 #puzzle-piece1{
-  color:green;
+  background-size: 100%;
+  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/bottom-right.png?v=1743279521493)
 }
