@@ -1,18 +1,12 @@
 var clicked = false;
-var ending_clicked = true;
-var puzzle_start = false;
 document.body.onclick = function () {
   if (!clicked) {
     clicked = !clicked;
     document.body.innerHTML = "";
     display_riddle();
   }
-  if (!ending_clicked) {
-    navigate_next_level();
-  }
 };
 function display_riddle() {
-  // var container = document.createElement("div");
   var container = document.createElement("div");
   container.setAttribute("id", "content");
 
