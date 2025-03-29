@@ -50,3 +50,6 @@ button:hover {
   height:135px;
   color:rgba(0, 0, 0, 0);
 }
+#puzzle-piece1{
+  color:green;
+}
