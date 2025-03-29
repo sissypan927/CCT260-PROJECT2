@@ -33,12 +33,11 @@ function load_puzzle() {
   var puzzle_board = document.createElement("div");
   var temp_button;
   var row = document.createElement("div");
-  for(var i = 1; i < 5; i++){
+  for(let i = 1; i < 5; i++){
     temp_button = document.createElement("button");
     temp_button.setAttribute("class", "puzzle-slot");
     temp_button.setAttribute("id", "puzzle-slot" + i);
-    var index = i.toString();
-    temp_button.addEventListener("click", () => check_puzzle(index, 0));
+    temp_button.addEventListener("click", () => check_puzzle(i, 0));
     temp_button.textContent = i;
     puzzle_board.append(temp_button);
     
@@ -52,13 +51,12 @@ function load_puzzle() {
   
   var pieces  = document.createElement("div");
   var row = document.createElement("div");
-  for(var i = 1; i < 5; i++){
+  for(let i = 1; i < 5; i++){
     temp_button = document.createElement("button");
     temp_button.setAttribute("class", "puzzle-piece");
     temp_button.setAttribute("id", "puzzle-piece" + i);
-    
-    temp_button.addEventListener("click", (s, p) => check_puzzle(0, index));
     temp_button.textContent = i;
+    temp_button.addEventListener("click", () => check_puzzle(0, i));
     pieces.append(temp_button);
   
   }
@@ -74,11 +72,13 @@ function check_puzzle(s, p){
   if(slot != 0 && piece != 0){
     if(slot == piece){
       alert("yay")
+      document.getElementById("puzzle-piece"+piece).remove();
+      document.getElementById("puzzle-slot"+slot).blur();
     }
     else{
-      alert("yeowch")
+      slot = 0;
+      piece = 0;
     }
   }
-  alert(slot + " " + piece)
   
 }
