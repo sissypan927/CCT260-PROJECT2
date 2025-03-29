@@ -1,4 +1,5 @@
 var clicked = false;
+var ending_clicked = true;
 var puzzle_start = false;
 document.body.onclick = function() { 
   
@@ -6,6 +7,9 @@ document.body.onclick = function() {
     clicked = !clicked;
     document.body.innerHTML = '';
     display_riddle();
+  }
+  if(!ending_clicked){
+    navigate_next_level();
   }
   ;}
 function display_riddle(){
@@ -94,14 +98,19 @@ function enter_number(number){
 function submit_ans(){
   var curr = document.getElementById("display").textContent;
   if(curr == "45277"){
-    alert("yay");
     document.body.innerHTML = "";
     var heading = document.createElement("h1");
     heading.textContent = "You solved the riddle and got a key!"
-    //connect to level 3
+    document.body.append(heading);
+    var audio = document.createElement("audio");
+    audio.setAttribute("src", "https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/key.mp3?v=1743261972450")
+    audio.play();
   }
   else{
     alert("ohno..");
     //Connect to ending 2
   }
+}
+function navigate_next_level(){
+  window.location.href = '../ending-2/ending-2.html';
 }
