@@ -54,11 +54,13 @@ button:hover {
 #text {
   font-size: 35px;
   position: relative;
+  color: #ff4444;
   top: 45%;
 }
 #continue {
   position: relative;
   top: 45%;
+  color: white;
   font-size: 20px;
   font-style: italic;
 }
@@ -95,6 +97,9 @@ button:hover {
 
 #riddle {
   float: left;
+}
+#riddle h1{
+  color: #ff4444;
 }
 #key-acquired {
   display: block;
