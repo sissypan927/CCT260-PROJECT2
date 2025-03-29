@@ -56,6 +56,7 @@ function load_puzzle() {
     temp_button = document.createElement("button");
     temp_button.setAttribute("class", "puzzle-piece");
     temp_button.setAttribute("id", "puzzle-piece" + i);
+    
     temp_button.addEventListener("click", () => check_puzzle(0, index));
     temp_button.textContent = i;
     pieces.append(temp_button);
