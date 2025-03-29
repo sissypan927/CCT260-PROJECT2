@@ -30,8 +30,8 @@ function load_instructions() {
 }
 function load_puzzle() {
   document.body.innerHTML = "";
-  var timer = document.createElement("p");
-  timer.innerHTML = "20";
+  var timer = document.createElement("h1");
+  timer.innerHTML = "Time remaining: 20 second(s)";
   timer.setAttribute("id", "timer");
   x = setInterval(time_up, 1000);
   document.body.append(timer);
@@ -139,7 +139,7 @@ function time_up() {
     window.location.href = "../ending-2/ending-2.html";
   } else {
     time_left -= 1;
-    document.getElementById("timer").innerHTML = time_left;
+    document.getElementById("timer").innerHTML = "Time remaining: " + time_left + " second(s)";
   }
 }
 function navigate_next_level() {
