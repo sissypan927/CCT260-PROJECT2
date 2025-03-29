@@ -17,8 +17,7 @@ function load_instructions() {
   var header = document.createElement("h1");
   header.textContent = "Instructions";
   var para = document.createElement("p");
-  para.textContent =
-    "Solve the jigsaw puzzle by clicking the piece then clicking the slot you want to place it in. You have 20 seconds.";
+  para.textContent = "Solve the jigsaw puzzle by clicking the piece then clicking the slot you want to place it in. You have 20 seconds.";
   var button = document.createElement("button");
   button.textContent = "Click to start the puzzle";
   button.addEventListener("click", load_puzzle);
@@ -29,6 +28,11 @@ function load_instructions() {
 }
 function load_puzzle() {
   document.body.innerHTML = "";
+  var timer = document.createElement("p");
+  timer.innerHTML = "20"
+  timer.setAttribute("id", "timer");
+  setInterval(time_up, 1000);
+  document.body.append(timer);
 
   var puzzle_board = document.createElement("div");
   var temp_button;
@@ -105,13 +109,18 @@ function check_puzzle(s, p) {
       piece = 0;
     }
     if (slot1 && slot2 && slot3 && slot4) {
-      alert("completed");
+      window.location.href = "../level3_b/level3_b.html";
     }
   }
 }
 
 var time_left = 20;
 function time_up(){
-  if(time_left == 0 && (!slot1||))
-  
+  if(time_left == 0 && (!slot1||!slot2||!slot3||!slot4)){
+    window.location.href = "../ending-2/ending-2.html";
+  }
+  else{
+    time_left -=1;
+    document.getElementById("timer").innerHTML = time_left;
+  }
 }

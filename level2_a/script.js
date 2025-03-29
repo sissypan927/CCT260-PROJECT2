@@ -118,10 +118,10 @@ function submit_ans() {
     div.append(button);
     document.body.append(div);
   } else {
-    alert("ohno..");
-    //Connect to ending 2
+    window.location.href = "../ending-2/ending-2.html";
   }
 }
 function navigate_next_level() {
-  window.location.href = "../ending-2/ending-2.html";
+  window.location.href = "../level3_a/level3_a.html";
+  //navigate next level
 }
