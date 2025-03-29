@@ -11,16 +11,20 @@ document.body.onclick = function() {
 function display_riddle(){
   // var container = document.createElement("div");
   
-  
-  
   var node = document.createElement("div");
-  node.setAttribute("id", "keypad");
   node.setAttribute("class", "container");
-  node.innerHTML = "<div id = 'display'><p>Key in your answer using the keypad...</p></div>";
+  var heading = document.createElement("h1");
+  
+  
+  
+  var node2 = document.createElement("div");
+  node2.setAttribute("id", "keypad");
+  node2.setAttribute("class", "container");
+  node2.innerHTML = "<div id = 'display'><p>Key in your answer using the keypad...</p></div>";
   
   var row = document.createElement("div");
   row.setAttribute("id", "row-1");
-  node.setAttribute("class", "rows");
+  node2.setAttribute("class", "rows");
   //Append number buttons
   for (let i = 1; i < 10; i++){
     var temp = document.createElement("button");
@@ -28,10 +32,10 @@ function display_riddle(){
     temp.addEventListener("click", () => enter_number(i));
     row.append(temp);
     if(i%3 == 0){
-      node.append(row);
+      node2.append(row);
       row = document.createElement("div");
       row.setAttribute("id", "row"+((i/3)+1));
-      node.setAttribute("class", "rows");
+      node2.setAttribute("class", "rows");
     }
     
   }
@@ -51,9 +55,9 @@ function display_riddle(){
   temp.addEventListener("click", submit_ans);
   row.append(temp);
   
-  node.append(row);
+  node2.append(row);
   
-  document.body.append(node);
+  document.body.append(node2);
 }
 function clear_ans(){
   document.getElementById("display").innerHTML = "<p></p>";
