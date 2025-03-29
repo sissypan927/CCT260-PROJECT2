@@ -12,11 +12,22 @@ function display_riddle(){
   node.setAttribute("id", "div1");
   node.setAttribute("class", "container");
   node.innerHTML = "<div id = 'display'>hi</div>";
+  
+  var row = document.createElement("div");
+  row.setAttribute("id", "row-1");
+  node.setAttribute("class", "rows");
   //Append number buttons
   for (let i = 1; i < 10; i++){
     var temp = document.createElement("button");
     temp.textContent = i;
-    node.append(temp);
+    row.append(temp);
+    if(i%3 == 0){
+      node.append(row);
+      row = document.createElement("div");
+      row.setAttribute("id", "row"+((i/3)+1));
+      node.setAttribute("class", "rows");
+    }
+    
   }
   //append clear button
   var temp = document.createElement("button");
@@ -29,6 +40,7 @@ function display_riddle(){
   //append ENTER button
   temp = document.createElement("button");
   temp.textContent = "ENTER";
+  
   node.append(temp);
   
   document.body.append(node);
