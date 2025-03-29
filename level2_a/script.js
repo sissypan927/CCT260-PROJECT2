@@ -8,8 +8,9 @@ document.body.onclick = function() {
   }
   ;}
 function display_riddle(){
+  var
   var node = document.createElement("div");
-  node.setAttribute("id", "div1");
+  node.setAttribute("id", "keypad");
   node.setAttribute("class", "container");
   node.innerHTML = "<div id = 'display'><p>hi</p></div>";
   
