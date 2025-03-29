@@ -5,6 +5,7 @@ var slot3 = false;
 var slot4 = false;
 var slot = 0;
 var piece = 0;
+var x;
 document.body.onclick = function () {
   if (!clicked) {
     clicked = !clicked;
@@ -17,7 +18,8 @@ function load_instructions() {
   var header = document.createElement("h1");
   header.textContent = "Instructions";
   var para = document.createElement("p");
-  para.textContent = "Solve the jigsaw puzzle by clicking the piece then clicking the slot you want to place it in. You have 20 seconds.";
+  para.textContent =
+    "Solve the jigsaw puzzle by clicking the piece then clicking the slot you want to place it in. You have 20 seconds.";
   var button = document.createElement("button");
   button.textContent = "Click to start the puzzle";
   button.addEventListener("click", load_puzzle);
@@ -29,9 +31,9 @@ function load_instructions() {
 function load_puzzle() {
   document.body.innerHTML = "";
   var timer = document.createElement("p");
-  timer.innerHTML = "20"
+  timer.innerHTML = "20";
   timer.setAttribute("id", "timer");
-  setInterval(time_up, 1000);
+  x = setInterval(time_up, 1000);
   document.body.append(timer);
 
   var puzzle_board = document.createElement("div");
@@ -109,18 +111,37 @@ function check_puzzle(s, p) {
       piece = 0;
     }
     if (slot1 && slot2 && slot3 && slot4) {
-      window.location.href = "../level3_b/level3_b.html";
+      document.body.innerHTML = "";
+      var div = document.createElement("div");
+      var heading = document.createElement("h1");
+      heading.textContent = "You solved the puzzle and got a map!";
+      div.append(heading);
+      var audio = document.createElement("audio");
+      audio.setAttribute(
+        "src",
+        "https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/key.mp3?v=1743261972450"
+      );
+      audio.play();
+      var button = document.createElement("button");
+      button.textContent = "Continue";
+      button.setAttribute("id", "continue_button");
+      button.addEventListener("click", navigate_next_level);
+      div.append(button);
+      document.body.append(div);
+      clearInterval(x);
     }
   }
 }
 
 var time_left = 20;
-function time_up(){
-  if(time_left == 0 && (!slot1||!slot2||!slot3||!slot4)){
+function time_up() {
+  if (time_left == 0 && (!slot1 || !slot2 || !slot3 || !slot4)) {
     window.location.href = "../ending-2/ending-2.html";
-  }
-  else{
-    time_left -=1;
+  } else {
+    time_left -= 1;
     document.getElementById("timer").innerHTML = time_left;
   }
+}
+function navigate_next_level() {
+  window.location.href = "../level3_b/level3_b.html";
 }

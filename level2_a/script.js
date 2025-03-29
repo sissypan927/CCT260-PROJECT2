@@ -123,5 +123,4 @@ function submit_ans() {
 }
 function navigate_next_level() {
   window.location.href = "../level3_a/level3_a.html";
-  //navigate next level
 }
