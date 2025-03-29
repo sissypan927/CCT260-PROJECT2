@@ -50,11 +50,16 @@ function display_riddle(){
   node.append(row);
   
   document.body.append(node);
-  alert(document.body.innerHTML);
 }
 function clear_ans(){
-  document.getElementByID("display").innerHTML = "<p></p>";
+  document.getElementById("display").innerHTML = "<p></p>";
 }
 function hello(number){
-  var curr = document.getElementByID("display").innerHTML;
+  var curr = document.getElementById("display").textContent;
+  if(curr == "Key in your answer using the keypad..."){
+     document.getElementById("display").textContent =  "";
+    curr = "";
+  }
+  document.getElementById("display").textContent = curr + number;
+  alert(curr);
 }
