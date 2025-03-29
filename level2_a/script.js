@@ -12,10 +12,17 @@ function display_riddle(){
   node.setAttribute("id", "div1");
   node.setAttribute("class", "container");
   node.innerHTML = "<div id = 'display'>hi</div>";
-   document.body.append(node);
-  for (let i = 0; i < 10; i++){
-    
+  for (let i = 1; i < 10; i++){
+    var temp = document.createElement("button");
+    temp.textContent = i;
+    node.append(temp);
   }
-  
+  var temp = document.createElement("button");
+  temp.textContent = 0;
+  node.append(temp);
+  temp = document.createElement("button");
+  temp.textContent = "DEL";
+  node.appened(temp);
+  document.body.append(node);
   alert(document.body.innerHTML);
 }
