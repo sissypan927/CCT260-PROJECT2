@@ -63,6 +63,12 @@ button:hover{
   font-size: 20px;
   font-style: italic;
 }
+#content{
+  display:inline-block;
+  margin:0;
+  padding:0;
+  border:0;
+}
 #keypad {
   display: flex;
   flex-direction: column;
@@ -87,6 +93,10 @@ button:hover{
 #display p{
   font-size: 20px;
   font-style:italic;
+}
+
+#riddle{
+  float:left;
 }
 
 
