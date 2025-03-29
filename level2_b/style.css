@@ -28,3 +28,10 @@ button {
 button:hover {
     background-color: #cc0000;
 }
+.puzzle-slot{
+  border-radius: 0px;
+  border-style: solid;
+  margin:0;
+  width:106px;
+  height:135px;
+}
