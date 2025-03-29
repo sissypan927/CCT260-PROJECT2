@@ -11,7 +11,7 @@ function display_riddle(){
   var node = document.createElement("div");
   node.setAttribute("id", "div1");
   node.setAttribute("class", "container");
-  node.innerHTML = "<div id = 'display'>hi</div>";
+  node.innerHTML = "<div id = 'display'><p>hi</p></div>";
   
   var row = document.createElement("div");
   row.setAttribute("id", "row-1");
@@ -32,16 +32,17 @@ function display_riddle(){
   //append clear button
   var temp = document.createElement("button");
   temp.textContent = "CLEAR";
-  node.append(temp);
+  row.append(temp);
   temp = document.createElement("button");
   //append 0 button
   temp.textContent = 0;
-  node.append(temp);
+  row.append(temp);
   //append ENTER button
   temp = document.createElement("button");
   temp.textContent = "ENTER";
+  row.append(temp);
   
-  node.append(temp);
+  node.append(row);
   
   document.body.append(node);
   alert(document.body.innerHTML);
