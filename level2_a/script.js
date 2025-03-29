@@ -57,9 +57,10 @@ function clear_ans(){
 function hello(number){
   var curr = document.getElementById("display").textContent;
   if(curr == "Key in your answer using the keypad..."){
-     document.getElementById("display").textContent =  "";
+     document.getElementById("display").innerHTML =  "";
     curr = "";
   }
-  document.getElementById("display").textContent = curr + number;
-  alert(curr);
+  if (curr.length < 5){
+     document.getElementById("display").innerHTML = "<p>" + curr + number +"</p>"; 
+  }
 }

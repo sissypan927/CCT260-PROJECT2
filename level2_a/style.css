@@ -83,10 +83,11 @@ button:hover{
   border-style:solid;
   border-width: 1%;
   border-color: red;
+  align-content:center;
   
 }
 #display p{
   font-size: 20px;
   font-style:italic;
 }
-/* ill change this later */
+
