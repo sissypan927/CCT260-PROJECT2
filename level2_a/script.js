@@ -10,16 +10,19 @@ document.body.onclick = function() {
   ;}
 function display_riddle(){
   // var container = document.createElement("div");
+  var container = document.createElement("div");
+  node2.setAttribute("id", "content");
   
   var node = document.createElement("div");
-  node.setAttribute("class", "container");
   var heading = document.createElement("h1");
-  
+  node.setAttribute("id", "riddle");
+  heading.textContent = "Riddle:";
+  node.append(heading);
+  container.append(node);
   
   
   var node2 = document.createElement("div");
   node2.setAttribute("id", "keypad");
-  node2.setAttribute("class", "container");
   node2.innerHTML = "<div id = 'display'><p>Key in your answer using the keypad...</p></div>";
   
   var row = document.createElement("div");
@@ -57,7 +60,8 @@ function display_riddle(){
   
   node2.append(row);
   
-  document.body.append(node2);
+  container.append(node2);
+  document.body.append(container);
 }
 function clear_ans(){
   document.getElementById("display").innerHTML = "<p></p>";
