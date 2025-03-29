@@ -21,6 +21,7 @@ function display_riddle(){
   for (let i = 1; i < 10; i++){
     var temp = document.createElement("button");
     temp.textContent = i;
+    temp.addEventListener("click", "alert()");
     row.append(temp);
     if(i%3 == 0){
       node.append(row);
