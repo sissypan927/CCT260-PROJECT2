@@ -12,8 +12,10 @@ function display_riddle(){
   node.setAttribute("id", "div1");
   node.setAttribute("class", "container");
   node.innerHTML = "<div id = 'display'>hi</div>";
-  
-  document.body.append(node);
+   document.body.append(node);
+  for (let i = 0; i < 10; i++){
+    
+  }
   
   alert(document.body.innerHTML);
 }
