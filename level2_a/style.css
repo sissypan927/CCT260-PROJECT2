@@ -68,6 +68,7 @@ button:hover{
   margin:0;
   padding:0;
   border:0;
+  width100%;
 }
 #keypad {
   display: flex;
@@ -75,7 +76,6 @@ button:hover{
   float:right;
   width: 30em;
   height: 50em;
-  padding: 10%;
   align-content: center;
   border-style:none;
 
