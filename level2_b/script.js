@@ -37,7 +37,8 @@ function load_puzzle() {
     temp_button = document.createElement("button");
     temp_button.setAttribute("class", "puzzle-slot");
     temp_button.setAttribute("id", "puzzle-slot" + i);
-    temp_button.addEventListener("click", () => check_puzzle(i.toString(), 0));
+    var index = i.toString();
+    temp_button.addEventListener("click", () => check_puzzle(index, 0));
     temp_button.textContent = i;
     puzzle_board.append(temp_button);
     
@@ -55,7 +56,6 @@ function load_puzzle() {
     temp_button = document.createElement("button");
     temp_button.setAttribute("class", "puzzle-piece");
     temp_button.setAttribute("id", "puzzle-piece" + i);
-    var index = i.toString();
     temp_button.addEventListener("click", () => check_puzzle(0, index));
     temp_button.textContent = i;
     pieces.append(temp_button);
