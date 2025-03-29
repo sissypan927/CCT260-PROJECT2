@@ -6,12 +6,12 @@ html {
   font-family: Arial, sans-serif;
   color: white;
 }
-button{
-  font-size:20px;
-  text-align:center;
-  padding:20px;
-  margin:2rem;
-  border-radius:3px;
+button {
+  font-size: 20px;
+  text-align: center;
+  padding: 10%;
+  margin: 1%;
+  border-radius: 3px;
 }
 .container {
   width: 60em;
@@ -49,12 +49,12 @@ button{
   font-style: italic;
 }
 #div1 {
-  display:block;
+  display: block;
   width: 30em;
   height: 50em;
   background-color: white;
   padding: 5%;
-  align-content:center;
+  justify-content: center;
 }
 #display {
   padding: 1em;
