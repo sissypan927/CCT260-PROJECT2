@@ -99,16 +99,20 @@ function submit_ans(){
   var curr = document.getElementById("display").textContent;
   if(curr == "45277"){
     document.body.innerHTML = "";
+    var div = document.createElement("div");
+    div.setAttribute("id", "key-acquired")
     var heading = document.createElement("h1");
     heading.textContent = "You solved the riddle and got a key!"
-    document.body.append(heading);
+    div.append(heading);
     var audio = document.createElement("audio");
     audio.setAttribute("src", "https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/key.mp3?v=1743261972450")
     audio.play();
     var button = document.createElement("button")
     button.textContent = "Continue";
+    button.setAttribute("id", "continue_button")
     button.addEventListener("click", navigate_next_level);
-    document.body.append(button);
+    div.append(button);
+    document.body.append(div);
   }
   else{
     alert("ohno..");

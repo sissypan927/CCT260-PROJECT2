@@ -99,5 +99,15 @@ button:hover{
 #riddle{
   float:left;
 }
-
+#key_acquired{
+  display: inline-block;
+  justify-content:center;
+  align-content:center;
+  text-align: center;
+}
+#continue_button{
+  font-size:25px;
+  padding: 5%;
+  text-align: center;
+}
 
