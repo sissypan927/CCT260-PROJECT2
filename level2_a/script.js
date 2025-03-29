@@ -12,7 +12,7 @@ function display_riddle(){
   var node = document.createElement("div");
   node.setAttribute("id", "keypad");
   node.setAttribute("class", "container");
-  node.innerHTML = "<div id = 'display'><p>hi</p></div>";
+  node.innerHTML = "<div id = 'display'><p>Key in your answer using the keypad...</p></div>";
   
   var row = document.createElement("div");
   row.setAttribute("id", "row-1");

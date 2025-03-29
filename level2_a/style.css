@@ -10,13 +10,16 @@ button {
   font-size: 30px;
   text-align: center;
   margin: 1%;
-  border-radius: 3px;
   width:30%;
   padding: 10% 0 10% 0;
   text-align: center;
+  background-color: #ff4444;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 button:hover{
-  background-color:red;
+  background-color: #cc0000;
 }
 .container {
   width: 60em;
@@ -27,7 +30,7 @@ button:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  gap:5%;
+  gap:4%;
 }
 #chest {
   z-index: 0;
@@ -65,18 +68,26 @@ button:hover{
   flex-direction: column;
   width: 30em;
   height: 50em;
-  background-color: white;
+  background-color: black;
   padding: 10%;
   align-content: center;
+  border-style:solid;
+  border-width: 1%;
+  border-color: red;
+  border-radius: 5%;
 
 }
 #display {
-  width: 29em;
+  width: 26em;
   height: 10em;
   padding: 1em;
-  background-color: blue;
+  border-style:solid;
+  border-width: 1%;
+  border-color: red;
+  
 }
 #display p{
   font-size: 20px;
+  font-style:italic;
 }
 /* ill change this later */
