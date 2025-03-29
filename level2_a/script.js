@@ -22,7 +22,7 @@ function display_riddle(){
   for (let i = 1; i < 10; i++){
     var temp = document.createElement("button");
     temp.textContent = i;
-    temp.addEventListener("click", () => hello(i));
+    temp.addEventListener("click", () => enter_number(i));
     row.append(temp);
     if(i%3 == 0){
       node.append(row);
@@ -41,10 +41,11 @@ function display_riddle(){
   //append 0 button
   temp.textContent = 0;
   row.append(temp);
-  temp.addEventListener("click", () => hello(0));
+  temp.addEventListener("click", () => enter_number(0));
   //append ENTER button
   temp = document.createElement("button");
   temp.textContent = "ENTER";
+  temp.addEventListener("click", submit_ans);
   row.append(temp);
   
   node.append(row);
@@ -54,7 +55,7 @@ function display_riddle(){
 function clear_ans(){
   document.getElementById("display").innerHTML = "<p></p>";
 }
-function hello(number){
+function enter_number(number){
   var curr = document.getElementById("display").textContent;
   if(curr == "Key in your answer using the keypad..."){
      document.getElementById("display").innerHTML =  "";
@@ -62,5 +63,14 @@ function hello(number){
   }
   if (curr.length < 5){
      document.getElementById("display").innerHTML = "<p>" + curr + number +"</p>"; 
+  }
+}
+function submit_ans(){
+  var curr = document.getElementById("display").textContent;
+  if(curr == "45277"){
+    alert("yay");
+  }
+  else{
+    alert("ohno..");
   }
 }
