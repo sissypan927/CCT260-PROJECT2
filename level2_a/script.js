@@ -96,7 +96,8 @@ function submit_ans(){
   if(curr == "45277"){
     alert("yay");
     document.body.innerHTML = "";
-    
+    var heading = document.createElement("h1");
+    heading.textContent = "You solved the riddle and got a key!"
     //connect to level 3
   }
   else{
