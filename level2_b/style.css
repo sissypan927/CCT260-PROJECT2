@@ -31,6 +31,7 @@ button:hover {
 .puzzle-slot{
   background-color: #1a1a1a;
   background-image:none;
+  background-size: 100%;
   color:#1a1a1a;
   border-radius: 0px;
   border-style: solid;

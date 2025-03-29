@@ -79,7 +79,8 @@ function check_puzzle(s, p){
   if(slot != 0 && piece != 0){
     if(slot == piece){
       var dest_slot = document.getElementById("puzzle-slot"+slot);
-      var new_img = document.getElementById("puzzle-piece"+piece).style.backgroundImage;
+      var piece_style = window.getComputedStyle(document.getElementById("puzzle-piece"+piece));
+      var new_img = piece_style.getPropertyValue('background-image');
       alert(new_img);
       dest_slot.style.backgroundImage = new_img;
       
