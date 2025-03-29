@@ -10,7 +10,7 @@ button {
   font-size: 30px;
   text-align: center;
   margin: 1%;
-  width:30%;
+  width: 30%;
   padding: 10% 0 10% 0;
   text-align: center;
   background-color: #ff4444;
@@ -18,19 +18,18 @@ button {
   text-decoration: none;
   border-radius: 5px;
 }
-button:hover{
+button:hover {
   background-color: #cc0000;
 }
 .container {
   width: 60em;
   height: 39em;
 }
-.rows
-{
+.rows {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  gap:4%;
+  gap: 4%;
 }
 #chest {
   z-index: 0;
@@ -63,51 +62,46 @@ button:hover{
   font-size: 20px;
   font-style: italic;
 }
-#content{
-  display:inline-block;
-  margin:0;
-  padding:10px;
-  border:0;
+#content {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  border: 0;
   gap: 10px;
 }
 #keypad {
   display: flex;
   flex-direction: column;
-  float:right;
+  float: right;
   width: 30em;
   height: 50em;
   align-content: center;
-  border-style:none;
-  padding:5em;
-
+  border-style: none;
+  padding: 5em;
 }
 #display {
   width: 26em;
   height: 10em;
   padding: 1em;
-  border-style:solid;
+  border-style: solid;
   border-width: 1%;
   border-color: red;
-  align-content:center;
-  
+  align-content: center;
 }
-#display p{
+#display p {
   font-size: 20px;
-  font-style:italic;
+  font-style: italic;
 }
 
-#riddle{
-  float:left;
+#riddle {
+  float: left;
 }
-#key_acquired{
-  display: inline-block;
-  justify-content:center;
-  align-content:center;
+#key-acquired {
+  display: block;
   text-align: center;
 }
-#continue_button{
-  font-size:25px;
+#continue_button {
+  font-size: 25px;
   padding: 5%;
   text-align: center;
 }
-
