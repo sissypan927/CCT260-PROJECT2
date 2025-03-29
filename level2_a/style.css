@@ -9,6 +9,9 @@ html {
 button{
   font-size:20px;
   text-align:center;
+  padding:20px;
+  margin:2rem;
+  border-radius:3px;
 }
 .container {
   width: 60em;
@@ -46,10 +49,12 @@ button{
   font-style: italic;
 }
 #div1 {
-  width: 55em;
-  height: 20em;
+  display:block;
+  width: 30em;
+  height: 50em;
   background-color: white;
   padding: 5%;
+  align-content:center;
 }
 #display {
   padding: 1em;
