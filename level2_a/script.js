@@ -105,6 +105,10 @@ function submit_ans(){
     var audio = document.createElement("audio");
     audio.setAttribute("src", "https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/key.mp3?v=1743261972450")
     audio.play();
+    var button = document.createElement("button")
+    button.textContent = "Continue";
+    button.addEventListener("click", navigate_next_level);
+    document.body.append(button);
   }
   else{
     alert("ohno..");
