@@ -49,7 +49,7 @@ button {
   font-style: italic;
 }
 #div1 {
-  display: block;
+  display: flex;
   width: 30em;
   height: 50em;
   background-color: white;
