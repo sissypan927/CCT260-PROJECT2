@@ -20,13 +20,15 @@ function display_riddle(){
   var riddle = document.createElement("p");
   riddle.append("I am a five-digit number. The sum of my digits is 25, and exactly");
   riddle.append(document.createElement("br"))
-  riddle.append("one digit repeats consecutively (like '22'). My second digit is larger");
+  riddle.append("one digit repeats consecutively (like '22'). My second digit is");
   riddle.append(document.createElement("br"))
-  riddle.append("than both my first and third digits. My ten-thousands digit is 4, and");
+  riddle.append("larger than both my first and third digits. My ten-thousands digit is");
   riddle.append(document.createElement("br"))
-  riddle.append("my ones digit is 7. My hundreds digit is even and smaller than my tens digit.");
+  riddle.append("4, and my ones digit is 7. My hundreds digit is even and smaller");
   riddle.append(document.createElement("br"))
-  riddle.append("No digit appears more than twice in the number. What number am I?");
+  riddle.append("than my tens digit. No digit appears more than twice in the");
+  riddle.append(document.createElement("br"))
+  riddle.append("number. What number am I?"); 
   node.append(riddle);
   
   node.append(heading);
