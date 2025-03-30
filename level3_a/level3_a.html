@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Choice - Basement Path</title>
-    <link rel="stylesheet" href="styles/level3.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape Room - Level 3</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="container">
-        <h1>The Hidden Chamber</h1>
-        <div class="story-content">
-            <p>You unlock a hidden door with the key and find yourself in a small chamber. Two mysterious doors stand before you:</p>
-            <div class="doors">
-                <div class="door red" onclick="makeChoice('red')">
-                    <img src="images/red-door.png" alt="Red Door">
-                    <p>Red Door</p>
+        <div id="text-frame">
+            <p id="text">
+                The key fits perfectly! With a click, a hidden panel slides open, 
+                revealing two mysterious doorways before you:
+            </p>
+            
+            <div class="doors-container">
+                <div class="door-option" data-door="red">
+                    <img class="door-image" 
+                         src="https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/red-door.png?v=1743039311412" 
+                         alt="Red Door">
+                    <p class="door-label">Red Door</p>
                 </div>
-                <div class="door blue" onclick="makeChoice('blue')">
-                    <img src="images/blue-door.png" alt="Blue Door">
-                    <p>Blue Door</p>
+                
+                <div class="door-option" data-door="blue">
+                    <img class="door-image" 
+                         src="https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/blue-door.png?v=1743039311413" 
+                         alt="Blue Door">
+                    <p class="door-label">Blue Door</p>
                 </div>
             </div>
-            <p class="hint">Choose wisely - your decision will determine your fate!</p>
+            
+            <p id="level3-hint">The air hums with energy... your choice will echo through eternity</p>
         </div>
     </div>
-    <script src="scripts/level3.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
