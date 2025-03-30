@@ -1,1 +1,29 @@
-level 3 a - basement
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Choice - Basement Path</title>
+    <link rel="stylesheet" href="styles/level3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Hidden Chamber</h1>
+        <div class="story-content">
+            <p>You unlock a hidden door with the key and find yourself in a small chamber. Two mysterious doors stand before you:</p>
+            <div class="doors">
+                <div class="door red" onclick="makeChoice('red')">
+                    <img src="images/red-door.png" alt="Red Door">
+                    <p>Red Door</p>
+                </div>
+                <div class="door blue" onclick="makeChoice('blue')">
+                    <img src="images/blue-door.png" alt="Blue Door">
+                    <p>Blue Door</p>
+                </div>
+            </div>
+            <p class="hint">Choose wisely - your decision will determine your fate!</p>
+        </div>
+    </div>
+    <script src="scripts/level3.js"></script>
+</body>
+</html>
