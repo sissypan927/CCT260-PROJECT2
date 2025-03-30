@@ -2,6 +2,7 @@
 
 [Planning Doc Link](https://docs.google.com/document/d/1DpYVqhqRzX5kx7a9Gh6NX1vq8bTM52-o8uYPa1q3XE0/edit?tab=t.0)
 
+[Presentation Doc](https://docs.google.com/presentation/d/1OxboHM3dIgYjKnfK7WrgxxAJW3Xkb-vxKsn6704AnDc/edit?usp=sharing)
 ## Tasks:
 ### Sissy:
 - Level 2 A
@@ -11,10 +12,12 @@
 - Ending 1
 - Ending 2
 - Ending 3
+- Presentation
 
 ### Kejing
 - Homepage
 - Level 1
 - Level 3
+- Presentation
 
 
