@@ -139,7 +139,8 @@ function time_up() {
     window.location.href = "../ending-2/ending-2.html";
   } else {
     time_left -= 1;
-    document.getElementById("timer").innerHTML = "Time remaining: " + time_left + " second(s)";
+    document.getElementById("timer").innerHTML =
+      "Time remaining: " + time_left + " second(s)";
   }
 }
 function navigate_next_level() {

@@ -1,76 +1,76 @@
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 h1 {
-    color: #ff4444;
+  color: #ff4444;
 }
 
 button {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #ff4444;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff4444;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 button:hover {
-    background-color: #cc0000;
+  background-color: #cc0000;
 }
-.puzzle-slot{
+.puzzle-slot {
   background-color: #1a1a1a;
-  background-image:none;
+  background-image: none;
   background-size: 100%;
-  color:#1a1a1a;
+  color: #1a1a1a;
   border-radius: 0px;
   border-style: solid;
-  margin:0;
-  width:106px;
-  height:135px;
-  border-color:#ff4444;
+  margin: 0;
+  width: 106px;
+  height: 135px;
+  border-color: #ff4444;
 }
-.puzzle-slot:hover{
+.puzzle-slot:hover {
   background-color: #1a1a1a;
 }
-.puzzle-slot:focus{
+.puzzle-slot:focus {
   background-color: #ff4444;
   color: #ff4444;
 }
-.puzzle-piece{
-  width:106px;
-  height:135px;
+.puzzle-piece {
+  width: 106px;
+  height: 135px;
   border-style: none;
   border-radius: 0px;
-  color:rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
 }
-.puzzle-piece:focus{
+.puzzle-piece:focus {
   border-style: solid;
   border-color: #ff4444;
 }
-#puzzle-piece1{
+#puzzle-piece1 {
   background-size: 100%;
-  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/top-left.png?v=1743279556070)
+  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/top-left.png?v=1743279556070);
 }
-#puzzle-piece2{
+#puzzle-piece2 {
   background-size: 100%;
-  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/top-right.png?v=1743279545242)
+  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/top-right.png?v=1743279545242);
 }
-#puzzle-piece3{
+#puzzle-piece3 {
   background-size: 100%;
-  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/bottom-left.png?v=1743279656125)
+  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/bottom-left.png?v=1743279656125);
 }
-#puzzle-piece4{
+#puzzle-piece4 {
   background-size: 100%;
-  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/bottom-right.png?v=1743279521493)
+  background-image: url(https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/bottom-right.png?v=1743279521493);
 }
