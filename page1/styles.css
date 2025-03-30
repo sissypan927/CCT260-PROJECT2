@@ -1,14 +1,30 @@
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
+    background-color: #fdf6ec;
+    color: #111;
+    font-family: "broadsheet", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20em;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+
 }
 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
+.page-container {
+  max-width: 700px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 2em;
+  box-shadow: 6px 6px 0 #aaa;
+  text-align: center;
+}
+
+
+.interior-image {
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 10px;
 }
 
 h1 {
