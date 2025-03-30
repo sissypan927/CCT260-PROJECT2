@@ -9,26 +9,51 @@ body {
     justify-content: center;
 
 }
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
+.newspaper-title {
+  font-size: 2.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px double #000;
+  padding-bottom: 0.4em;
+  margin-bottom: 1em;
 }
 
-h1 {
-    color: #ff4444;
+.intro-text {
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+  line-height: 1.6;
 }
 
-.button {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #ff4444;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
+.mansion-image {
+  width: 100%;
+  border: 2px solid #000;
+  margin-bottom: 2em;
 }
 
-.button:hover {
-    background-color: #cc0000;
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.hand {
+  font-size: 2em;
+}
+
+.adventure-button {
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #000;
+  font-weight: bold;
+  box-shadow: 3px 3px 0 #999;
+  transition: transform 0.1s ease;
+}
+
+.adventure-button:hover {
+  transform: scale(1.05);
 }
