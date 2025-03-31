@@ -65,13 +65,6 @@ button:hover {
   margin-bottom: 1.5em;
 }
 
-#continue {
-  position: relative;
-  top: 45%;
-  color: white;
-  font-size: 20px;
-  font-style: italic;
-}
 #content {
   display: inline-block;
   margin: 0;
@@ -98,10 +91,6 @@ button:hover {
   border-color: red;
   align-content: center;
 }
-#display p {
-  font-size: 20px;
-  font-style: italic;
-}
 
 #riddle {
   float: left;
@@ -123,26 +112,16 @@ button:hover {
   position: relative;
   width: 90%;
   max-width: 700px;
-  margin: 2em auto;
+  margin: 1em auto 2em auto; /* Less top margin */
 }
 
 
 .parchment-img {
-  width: 130%;
+  width: 100%;
   object-fit: cover;
   display: block;
-  align-content: center;
+  border: 2px solid #000;
+  border-radius: 12px;
+
 }
 
-.riddle-text {
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 56%; 
-  max-width: 550px;
-  font-size: 1.05em;
-  line-height: 1.5;
-  color: #111;
-  text-align: center;
-}
