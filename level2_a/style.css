@@ -121,31 +121,28 @@ button:hover {
 
 .parchment-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 1000px; 
-  height: auto;
+  width: 90%;
+  max-width: 700px;
   margin: 2em auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 
 .parchment-img {
-  width: 100%;
-  height: auto;
-  max-height: 350px; 
-  object-fit: contain;
+  width: 130%;
+  object-fit: cover;
+  display: block;
+  align-content: center;
 }
 
 .riddle-text {
   position: absolute;
-  top: 10%;
-  left: 8%;
-  width: 84%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56%; 
+  max-width: 550px;
+  font-size: 1.05em;
+  line-height: 1.5;
   color: #111;
-  font-size: 1em;
-  line-height: 1.6;
   text-align: center;
-  padding: 0.5em;
 }
