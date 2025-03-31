@@ -19,12 +19,15 @@ button {
   padding: 10px 20px;
   background-color: transparent;
   color: black;
+  font-size: 20px;
   text-decoration: none;
   border-radius: 5px;
+  font-family: "broadsheet", serif;
 }
 
 button:hover {
   background-color: black;
+  font-size: 20px;
   color: white;
 }
 .puzzle-slot {
