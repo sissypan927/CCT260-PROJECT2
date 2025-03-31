@@ -3,14 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <title>You Lost</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background-image: url("https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/trap_ending.png?v=1743420905977");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lost-text {
+      color: red;
+      font-size: 2.5em;
+      font-family: "broadsheet";
+    }
+  </style>
 </head>
-<body style="background-color: black; text-align: center; margin: 0; padding: 2em;">
-
-  <img src="trap_ending.png" alt="You are trapped" style="width: 100%; max-width: 800px; border: 2px solid #f00; border-radius: 8px;">
-
-  <p style="color: red; font-size: 2em; font-family: 'serif'; margin-top: 1.5em;">
+<body>
+  <div class="lost-text">
     You lost you lost you lost you lost you lost you lost you're trapped
-  </p>
-
+  </div>
 </body>
 </html>
