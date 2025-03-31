@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mirror Ending</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="slide1" class="slide active">
+    <img src="https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/hidden-ending1?v=1743422329077" alt="Safe ending" />
+    <div class="text center-text">Congrats! You escaped...</div>
+  </div>
+
+  <div id="slide2" class="slide">
+    <img src="https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/hidden-ending2?v=1743422331310" alt="Mirror ending" />
+    <div class="text ominous-text">This place is only a reflection.<br>And now, it remembers you.</div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('slide1').classList.remove('active');
+      document.getElementById('slide2').classList.add('active');
+    }, 3000);
+  </script>
+</body>
+</html>

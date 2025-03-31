@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background-color: #000;
+  overflow: hidden;
+  font-family: 'broadsheet', serif;
+}
+
+.slide {
+  display: none;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 2px 2px 8px black;
+}
+
+.center-text {
+  top: 45%;
+  font-size: 2.5em;
+}
+
+.ominous-text {
+  bottom: 5%;
+  font-style: italic;
+  color: red;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
