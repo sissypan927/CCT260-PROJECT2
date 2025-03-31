@@ -1,0 +1,32 @@
+body {
+    background-color: #fdf6ec;
+    color: #111;
+    font-family: "broadsheet", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20em;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.ending-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3em 2em;
+}
+
+.ending-text {
+  font-family: "broadsheet", serif;
+  font-size: 1.4em;
+  margin-bottom: 2em;
+  color: #111;
+}
+
+.ending-image {
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 12px;
+}
