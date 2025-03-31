@@ -118,7 +118,7 @@ function submit_ans() {
     div.append(button);
     document.body.append(div);
   } else {
-    window.location.href = "../ending-2/ending-2.html";
+    window.location.href = "../ending_2/ending_2.html";
   }
 }
 function navigate_next_level() {

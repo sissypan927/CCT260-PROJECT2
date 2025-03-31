@@ -1,9 +1,11 @@
 body {
-  background-color: #1a1a1a;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
+    background-color: #fdf6ec;
+    color: #111;
+    font-family: "broadsheet", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    align-contents: center;
 }
 
 .container {
@@ -11,22 +13,19 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  color: #ff4444;
-}
-
 button {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  background-color: #ff4444;
-  color: #ffffff;
+  background-color: transparent;
+  color: black;
   text-decoration: none;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #cc0000;
+  background-color: black;
+  color: white;
 }
 .puzzle-slot {
   background-color: #1a1a1a;
