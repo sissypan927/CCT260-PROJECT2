@@ -37,6 +37,7 @@ body {
 }
 
 .button-wrapper {
+  margin-top: 3em;
   display: flex;
   justify-content: center;
   gap: 3em;
@@ -46,15 +47,14 @@ body {
 .choice-button {
   border: 2px solid #000;
   border-radius: 12px;
-  background-color: #fff;
   padding: 1em;
   width: 180px;
   transition: transform 0.2s ease;
 }
 
 .choice-button:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+  background-color: black;
+  color: #ffffff
 }
 
 .button-image {
