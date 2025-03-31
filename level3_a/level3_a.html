@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Escape Room - Level 3</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Doors - Level 3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #000000; /* Pure black background */
+            margin: 0;
+            padding: 0;
+        }
+        #text {
+            color: #ff0000; /* Bright red text */
+            text-align: center; /* Centered text */
+            font-size: 1.2em;
+            margin-bottom: 2em;
+            text-shadow: 0 0 5px rgba(255,0,0,0.5);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div id="text-frame">
             <p id="text">
-                The key fits perfectly! With a click, a hidden panel slides open, 
-                revealing two mysterious doorways before you:
+                The key clicks in the lock. Before you stand two ancient doors,<br>
+                each radiating a different energy:
             </p>
             
-            <div class="doors-container">
-                <div class="door-option" data-door="red">
-                    <img class="door-image" 
-                         src="https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/red-door.png?v=1743039311412" 
-                         alt="Red Door">
-                    <p class="door-label">Red Door</p>
+            <div class="choice-container">
+                <div class="choice-option" data-choice="red">
+                    <img src="https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/red-door.png" 
+                         alt="Red Door" class="choice-image">
+                    <p class="choice-label">Path of Flames</p>
                 </div>
                 
-                <div class="door-option" data-door="blue">
-                    <img class="door-image" 
-                         src="https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/blue-door.png?v=1743039311413" 
-                         alt="Blue Door">
-                    <p class="door-label">Blue Door</p>
+                <div class="choice-option" data-choice="blue">
+                    <img src="https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/blue-door.png" 
+                         alt="Blue Door" class="choice-image">
+                    <p class="choice-label">Path of Depths</p>
                 </div>
             </div>
             
-            <p id="level3-hint">The air hums with energy... your choice will echo through eternity</p>
+            <p id="hint">Your choice here will echo through eternity...</p>
         </div>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>

@@ -23,6 +23,7 @@ button {
   text-decoration: none;
   border-radius: 5px;
 }
+
 button:hover {
   background-color: #cc0000;
 }
@@ -36,13 +37,9 @@ button:hover {
   margin-right: auto;
   gap: 4%;
 }
-#chest {
-  z-index: 0;
-  position: absolute;
-  width: 45em;
-  height: 45em;
-  right: 30%;
-}
+
+
+
 #text-frame {
   margin-left: 10em;
   position: relative;

@@ -1,35 +1,39 @@
-// ===== LEVEL 3 FUNCTIONS =====
-function initializeLevel3() {
-  const ambientSound = new Audio('https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/ambient.mp3?v=1743261972452');
-  ambientSound.loop = true;
-  ambientSound.volume = 0.3;
-  ambientSound.play();
-
-  document.querySelectorAll('.door-option').forEach(door => {
-    door.addEventListener('click', function() {
-
-      const selectSound = new Audio('https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/select.mp3?v=1743261972453');
-      selectSound.play();
-      
-
-      this.style.transform = 'scale(0.95)';
-      setTimeout(() => {
-        this.style.transform = 'scale(1)';
-      }, 200);
-
-
-      const doorColor = this.getAttribute('data-door');
-      setTimeout(() => {
-        if (doorColor === 'red') {
-          window.location.href = "../ending1/ending1.html";
-        } else {
-          window.location.href = "../ending3/ending3.html";
-        }
-      }, 500);
+// Initialize Level 3
+function initLevel3() {
+    const options = document.querySelectorAll('.choice-option');
+    
+    options.forEach(option => {
+        // Hover effect
+        option.addEventListener('mouseenter', () => {
+            option.style.transform = 'scale(1.05)';
+        });
+        
+        option.addEventListener('mouseleave', () => {
+            option.style.transform = '';
+        });
+        
+        // Click handler
+        option.addEventListener('click', function() {
+            // Visual feedback
+            this.style.boxShadow = '0 0 20px currentColor';
+            
+            // Disable other options
+            options.forEach(opt => {
+                opt.style.pointerEvents = 'none';
+            });
+            
+            // Navigate after delay
+            setTimeout(() => {
+                const choice = this.getAttribute('data-choice');
+                window.location.href = choice === 'red' 
+                    ? 'ending1.html' 
+                    : 'ending3.html';
+            }, 500);
+        });
     });
-  });
 }
 
-if (document.querySelector('.doors-container')) {
-  document.addEventListener('DOMContentLoaded', initializeLevel3);
+// Auto-initialize if on level3
+if (document.querySelector('.choice-container')) {
+    document.addEventListener('DOMContentLoaded', initLevel3);
 }
