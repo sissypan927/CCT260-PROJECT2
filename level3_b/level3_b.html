@@ -1,1 +1,56 @@
-level 3 b - map
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Lights - Level 3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        #text {
+            color: #ff0000;
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 2em;
+            text-shadow: 0 0 5px rgba(255,0,0,0.5);
+        }
+        .light-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid;
+            box-shadow: 0 0 20px currentColor;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="text-frame">
+            <p id="text">
+                Following the map, you find a secret passage ending with two lights:<br>
+                one green and one yellow. Which will you choose?
+            </p>
+            
+            <div class="choice-container">
+                <div class="choice-option" data-choice="green">
+                    <div class="light-image" style="border-color: #0f9d58; box-shadow: 0 0 20px #0f9d58;"></div>
+                    <p class="choice-label">Green Light</p>
+                </div>
+                
+                <div class="choice-option" data-choice="yellow">
+                    <div class="light-image" style="border-color: #f4b400; box-shadow: 0 0 20px #f4b400;"></div>
+                    <p class="choice-label">Yellow Light</p>
+                </div>
+            </div>
+            
+            <p id="hint">Mysterious energy pulses within the lights...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

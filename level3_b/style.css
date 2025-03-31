@@ -1,0 +1,19 @@
+/* ===== LIGHT SPECIFIC STYLES ===== */
+.choice-option[data-choice="green"] .choice-label {
+    color: #0f9d58;
+    text-shadow: 0 0 5px rgba(15, 157, 88, 0.5);
+}
+
+.choice-option[data-choice="yellow"] .choice-label {
+    color: #f4b400;
+    text-shadow: 0 0 5px rgba(244, 180, 0, 0.5);
+}
+
+.light-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choice-option:hover .light-image {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px currentColor;
+}
