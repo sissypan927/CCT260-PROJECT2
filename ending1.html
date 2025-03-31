@@ -3,68 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escape Successful - Ending 1</title>
+    <title>Escape Successful!</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Page-specific overrides */
         body {
-            background-color: #000000;
-            margin: 0;
-            padding: 0;
+            background: #000 url('https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/mansion-exterior.jpg') no-repeat center/cover;
         }
-        #ending-text {
-            color: #0f9d58; /* Success green */
-            text-align: center;
-            font-size: 1.3em;
+        .ending-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 2px solid #0f9d58;
+        }
+        .ending-title {
+            color: #0f9d58;
+            text-shadow: 0 0 10px rgba(15, 157, 88, 0.7);
+        }
+        .ending-text {
+            color: #fff;
             line-height: 1.6;
-            margin: 2em auto;
-            max-width: 800px;
-            text-shadow: 0 0 10px rgba(15, 157, 88, 0.5);
-        }
-        #mansion-image {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            border-radius: 8px;
-            border: 3px solid #0f9d58;
-            box-shadow: 0 0 30px rgba(15, 157, 88, 0.7);
-            margin: 1em auto;
-            display: block;
-        }
-        #restart-button {
-            background-color: #0f9d58;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 1.1em;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 2em auto;
-            display: block;
-            transition: all 0.3s ease;
-        }
-        #restart-button:hover {
-            background-color: #0d8046;
-            transform: scale(1.05);
-            box-shadow: 0 0 15px #0f9d58;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div id="text-frame">
-            <div id="ending-text">
-                <p>You've successfully escaped the mansion!</p>
-                <p>The truth is revealed: this was once a scientist's laboratory where a failed experiment caused everyone to disappear.</p>
-                <p>By exposing the truth, you've become heroes!</p>
+        <div class="ending-container">
+            <h1 class="ending-title">ESCAPE SUCCESSFUL!</h1>
+            <div class="ending-text">
+                <p>You've uncovered the mansion's secret: </p>
+                <p>A scientist's failed experiment caused all the disappearances.</p>
+                <p>By revealing the truth, you've become legends!</p>
             </div>
-            
-            <img id="mansion-image" 
-                 src="https://cdn.glitch.global/4a7df820-baeb-4964-a116-d8ae284b35e2/mansion-exterior.jpg" 
-                 alt="Sunlit Mansion Exterior">
-            
-            <button id="restart-button" onclick="location.href='../index.html'">
-                Play Again
-            </button>
+            <button id="restartButton" class="restart-btn">PLAY AGAIN</button>
         </div>
     </div>
     <script src="script.js"></script>
