@@ -136,7 +136,7 @@ function check_puzzle(s, p) {
 var time_left = 20;
 function time_up() {
   if (time_left == 0 && (!slot1 || !slot2 || !slot3 || !slot4)) {
-    window.location.href = "../ending-2/ending-2.html";
+    window.location.href = "../ending_2/ending_2.html";
   } else {
     time_left -= 1;
     document.getElementById("timer").innerHTML =
