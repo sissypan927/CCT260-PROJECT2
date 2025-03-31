@@ -112,7 +112,7 @@ button:hover {
   position: relative;
   width: 90%;
   max-width: 700px;
-  margin: 1em auto 2em auto; /* Less top margin */
+  margin: 0.5em auto 2em auto; /* Less top margin */
 }
 
 
@@ -124,4 +124,3 @@ button:hover {
   border-radius: 12px;
 
 }
-
