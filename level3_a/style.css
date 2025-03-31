@@ -20,10 +20,13 @@ body {
 
 .scene-image {
   width: 100%;
-  max-width: 800px;
-  border-radius: 12px;
+  max-width: 600px;
+  height: 250px;
+  object-fit: cover;
   border: 2px solid #000;
-  margin-bottom: 2em;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
 
 .choice-row {
@@ -37,7 +40,6 @@ body {
   border: 2px solid #000;
   border-radius: 12px;
   padding: 1em;
-  background-color: #fff;
   width: 220px;
   transition: transform 0.2s ease;
 }
