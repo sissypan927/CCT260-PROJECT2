@@ -56,25 +56,12 @@ button:hover {
 }
 
 
-
-#text-frame {
-  margin-left: 10em;
-  position: relative;
-  z-index: 1;
-  width: 80em;
-  height: 35em;
-  top: 10%;
-  right: 35%;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
 #text {
-  font-size: 35px;
-  position: relative;
-  color: #ff4444;
-  top: 45%;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
 }
+
 #continue {
   position: relative;
   top: 45%;
