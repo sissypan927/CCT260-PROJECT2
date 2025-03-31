@@ -28,13 +28,13 @@ button {
 button:hover {
   background-color: black;
   font-size: 20px;
-  color: white;
+  color: rgba(0, 0, 0, 0);
 }
 .puzzle-slot {
   background-color: #1a1a1a;
   background-image: none;
   background-size: 100%;
-  color: #1a1a1a;
+  color: rgba(0, 0, 0, 0);
   border-radius: 0px;
   border-style: solid;
   margin: 0;
@@ -43,11 +43,10 @@ button:hover {
   border-color: #ff4444;
 }
 .puzzle-slot:hover {
-  background-color: #1a1a1a;
+  background-color: #ff4444;
 }
 .puzzle-slot:focus {
   background-color: #ff4444;
-  color: #ff4444;
 }
 .puzzle-piece {
   width: 106px;
@@ -59,6 +58,7 @@ button:hover {
 .puzzle-piece:focus {
   border-style: solid;
   border-color: #ff4444;
+  color: rgba(0, 0, 0, 0);
 }
 #puzzle-piece1 {
   background-size: 100%;
