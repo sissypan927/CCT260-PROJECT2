@@ -7,6 +7,7 @@
 ### Sissy:
 - Level 2 A
 - Level 2 B
+- Presentation Slides & Script
 
 ### Urvi:
 - Ending 1
